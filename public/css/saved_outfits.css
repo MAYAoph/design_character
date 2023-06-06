@@ -1,0 +1,26 @@
+.outfit {
+    font-size:3vw;
+    padding: 5%;
+    background-color: #FCFCFC;}
+
+#outfit_div {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-size:3vw; 
+}
+
+
+#delete {
+    width: 5%;
+    left: 5%;
+}
+
+body {
+  background: url(../img/closet.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+}

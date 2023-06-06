@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <header>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <title> Design The Character</title>
+    </header>
+    <body>
+
+        
+      
+      <div id="display_hair">
+        <img class="hair1" id="blonde_bobcut_pony1" src="img/hair/blonde_bobcut_pony.png" >
+        <img class="hair1" id="brown_chest1" src="img/hair/brown_chest.png" >
+        <img class="hair1" id="chestnut_chest1" src="img/hair/chestnut_chest.png" >
+        <img class="hair1" id="dirtyblond_chest_pony1" src="img/hair/dirtyblond_chest_pony.png" >
+        <img class="hair1" id="grayblue_shoulder1" src="img/hair/grayblue_shoulder.png" >
+        <img class="hair1" id="purple_shoulder1" src="img/hair/purple_shoulder.png" >
+        <img class="hair1" id="brown_braid1" src="img/hair/brown_braid.png">
+        <img class="hair1" id="purple_bun_short1" src="img/hair/purple_bun_short.png" >
+        <img class="hair1" id="white_long_wavey1" src="img/hair/white_long_wavey.png">
+        <img class="hair1" id="darkbrown_bun_short1" src="img/hair/darkbrown_bun_short.png">
+      </div>
+
+      <div id="display_clothes">
+        <img class="clothes1" id="pink_short_dress1" src="img/clothes/pink_short_dress.png" >
+        <img class="clothes1" id="short_purple_dress1" src="img/clothes/short_purple_dress.png" >
+        <img class="clothes1" id="turquoise_dress1" src="img/clothes/turquoise_dress.png">
+        <img class="clothes1" id="lime_dress1" src="img/clothes/lime_dress.png" >
+        <img class="clothes1" id="long_blue_dress1" src="img/clothes/long_blue_dress.png" >
+        <img class="clothes1" id="long_purple_dress1" src="img/clothes/long_purple_dress.png" >
+        <img class="clothes1" id="music_dress1" src="img/clothes/music_dress.png" >
+        <img class="clothes1" id="night_dress1" src="img/clothes/night_dress.png" >
+        <img class="clothes1" id="red_dress1" src="img/clothes/red_dress.png" >
+        <img class="clothes1" id="short_blue_dress1" src="img/clothes/short_blue_dress.png" >
+        <img class="clothes1" id="short_blue_dress21" src="img/clothes/short_blue_dress2.png" >
+        <img class="clothes1" id="short_blue_dress31" src="img/clothes/short_blue_dress3.png" >
+        <img class="clothes1" id="short_blue_dress41" src="img/clothes/short_blue_dress4.png" >
+        <img class="clothes1" id="short_strepless_purple_dress1" src="img/clothes/short_strepless_purple_dress.png" >
+       </div>
+
+                
+       <div id="display_face">
+        <img class="face1" id="happy1" src="img/face/happy.png" >
+        <img class="face1" id="laughing1" src="img/face/laughing.png" >
+        <img class="face1" id="sad1" src="img/face/sad.png" >
+        <img class="face1" id="surprised1" src="img/face/surprised.png" >
+        <img class="face1" id="very_happy1" src="img/face/very_happy.png" >
+        <img class="face1" id="angry1" src="img/face/angry.png" >
+        <img class="face1" id="angry21" src="img/face/angry2.png" >
+        <img class="face1" id="confused1" src="img/face/confused.png" >
+        <img class="face1" id="confused21" src="img/face/confused2.png" >
+        <img class="face1" id="eyes_closed1" src="img/face/eyes_closed.png" >
+        <img class="face1" id="eyes_closed_blush1" src="img/face/eyes_closed_blush.png" >
+        <img class="face1" id="in_love1" src="img/face/in_love.png">
+        <img class="face1" id="normal1" src="img/face/normal.png" >
+        <img class="face1" id="pissed_off1" src="img/face/pissed_off.png" >
+        <img class="face1" id="pissed_off21" src="img/face/pissed_off2.png" >
+        <img class="face1" id="pissed_off_eyes_closed1" src="img/face/pissed_off_eyes_closed.png" >
+        <img class="face1" id="scared1" src="img/face/scared.png" >
+        <img class="face1" id="smile1" src="img/face/smile.png" >
+        <img class="face1" id="stressed1" src="img/face/stressed.png" >
+        <img class="face1" id="surprised1" src="img/face/surprised.png" >
+        <img class="face1" id="surprised21" src="img/face/surprised2.png" >
+       </div>
+       
+      <img src="img/body.png" id="girl"> 
+      <button title="get back to the starter toolbar" class="rainbow-button" onclick="back()"> Back </button>
+      <button title="save the outfit you created!" class="rainbow-button" id="save" onclick="save()"> Save </button>
+      <button title="load an outfit you saved!" class="rainbow-button" id="load" onclick="load()"> load </button>
+
+      <div  id="toolbar">
+        <div class="container" title="starter toolbar" id="starter_div">
+        <img class="starter" title="Design the hair of the character!" id="hair" src="img/hair.png" onclick="start(this.id)">
+        <img class="starter" title="Design the face of the character!" id="face" src="img/face.png" onclick="start(this.id)">
+        <img class="starter" title="Design the clothes of the character!" id="clothes" src="img/clothes.png" onclick="start(this.id)">
+        <img class="starter" title="Choose a background" id="background" src="img/background.png" onclick="start(this.id)">
+      </div>
+
+      <div class="container" id="hair_div">
+        <img class="hair" id="blonde_bobcut_pony" src="img/hair/blonde_bobcut_pony.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="brown_chest" src="img/hair/brown_chest.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="chestnut_chest" src="img/hair/chestnut_chest.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="dirtyblond_chest_pony" src="img/hair/dirtyblond_chest_pony.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="grayblue_shoulder" src="img/hair/grayblue_shoulder.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="purple_shoulder" src="img/hair/purple_shoulder.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="brown_braid" src="img/hair/brown_braid.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="purple_bun_short" src="img/hair/purple_bun_short.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="white_long_wavey" src="img/hair/white_long_wavey.png" onclick="hair(this.id,this.className)">
+        <img class="hair" id="darkbrown_bun_short" src="img/hair/darkbrown_bun_short.png" onclick="hair(this.id,this.className)">
+      
+         </div> 
+
+         <div class="container" id="clothes_div">
+          <img class="clothes" id="pink_short_dress" src="img/clothes/pink_short_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_purple_dress" src="img/clothes/short_purple_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="turquoise_dress" src="img/clothes/turquoise_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="lime_dress" src="img/clothes/lime_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="long_blue_dress" src="img/clothes/long_blue_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="long_purple_dress" src="img/clothes/long_purple_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="music_dress" src="img/clothes/music_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="night_dress" src="img/clothes/night_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="red_dress" src="img/clothes/red_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_blue_dress" src="img/clothes/short_blue_dress.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_blue_dress2" src="img/clothes/short_blue_dress2.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_blue_dress3" src="img/clothes/short_blue_dress3.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_blue_dress4" src="img/clothes/short_blue_dress4.png" onclick="hair(this.id,this.className)">
+          <img class="clothes" id="short_strepless_purple_dress" src="img/clothes/short_strepless_purple_dress.png" onclick="hair(this.id,this.className)">
+         </div>
+
+         
+         <div class="container" id="face_div">
+          <img class="face" id="happy" src="img/face/happy.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="laughing" src="img/face/laughing.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="sad" src="img/face/sad.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="surprised" src="img/face/surprised.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="very_happy" src="img/face/very_happy.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="angry" src="img/face/angry.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="angry2" src="img/face/angry2.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="confused" src="img/face/confused.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="confused2" src="img/face/confused2.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="eyes_closed" src="img/face/eyes_closed.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="eyes_closed_blush" src="img/face/eyes_closed_blush.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="in_love" src="img/face/in_love.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="normal" src="img/face/normal.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="pissed_off" src="img/face/pissed_off.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="pissed_off2" src="img/face/pissed_off2.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="pissed_off_eyes_closed" src="img/face/pissed_off_eyes_closed.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="scared" src="img/face/scared.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="smile" src="img/face/smile.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="stressed" src="img/face/stressed.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="surprised" src="img/face/surprised.png" onclick="hair(this.id,this.className)">
+          <img class="face" id="surprised2" src="img/face/surprised2.png" onclick="hair(this.id,this.className)">
+         </div>
+
+         <div class="container" id="background_div">
+          <img class="background" id="beach" src="img/background/beach.png" onclick="background(this.id)">
+          <img class="background" id="city" src="img/background/city.png" onclick="background(this.id)">
+          <img class="background" id="fild" src="img/background/fild.png" onclick="background(this.id)">
+          <img class="background" id="mountain" src="img/background/mountain.png" onclick="background(this.id)">
+          <img class="background" id="palace" src="img/background/palace.png" onclick="background(this.id)">
+          <img class="background" id="small_town" src="img/background/small_town.png" onclick="background(this.id)">
+         </div>
+
+      </div>
+      <div id="overlay" class="overlay">
+      <div class="pop" id="pop">
+        <button id="exit" onclick="popDown()"> X</button>
+        <h1> Welcome!</h1>
+        <p id="text"> to start designing, press each category in the starter toolbar (on the right) to access the items! hover over the buttons for more information!</p>
+      </div>
+      </div>
+    </body>

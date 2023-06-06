@@ -1,0 +1,360 @@
+body {
+    background: url(../img/background/beach_background.jpg ) ;
+    background: fixed;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+.pop {
+    text-align: center;
+   background-color: #c9c5c5c5;
+   font-size: 200%;
+   color: #000000;
+   top: 0;
+   left:50%;
+   width: 40%;
+   height: 40%;
+   position: absolute;
+   z-index: 0;
+   transform: translate(-50%,-50%) scale(0.1);
+   visibility: hidden;
+   transition: transform 0.4s, top 0.4s;
+ }
+ 
+ .popUp {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+ }
+
+ #exit {
+    background: none;
+    font-size: 100%;
+    font-family: 'Heebo', sans-serif;
+    border: none;
+    margin-left: 80%;
+ }
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay2 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+#girl {
+    width:30%;
+    height: auto;
+    position: fixed;
+    left: 30%;
+    top: 10%;
+}
+
+.rainbow-button {
+    width:calc(13vw + 4.5px);
+    height:calc(5vw + 4.5px);
+    background-image: linear-gradient(90deg,rgb(201, 144, 255) 0%,rgb(184, 108, 255) 49%, rgb(139, 15, 255) 80%, rgb(201, 144, 255) 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:2vw;
+    font-weight:bold;
+    position: fixed;
+    left: 3%
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:15vw;
+    height:6vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:15vw;
+    }
+  }
+
+#save {
+    top: 15%;
+}
+
+#load {
+    top: 30%;
+}
+
+#toolbar {
+    position: absolute;
+    background-color: rgb(201, 144, 255);
+    width: 20%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.starter {
+    width: 50%;
+    padding-left: 20%;
+    padding-top: 3%;
+}
+
+.hair {
+    width: 40%;
+}
+
+.hair1 {
+    display: none;
+}
+
+#hair_div {
+      display: none;  
+      background-color: rgb(201, 144, 255);
+}
+
+#blonde_bobcut_pony1 {
+    width: 8.5%;
+    position: fixed;
+    left: 41%;
+    top: 12%; 
+    z-index: 2;
+}
+
+#brown_chest1 {
+    width: 13%;
+    position: fixed;
+    left: 38.5%;
+    top: 10%; 
+    z-index: 2;
+}
+#chestnut_chest1 {
+    width: 12%;
+    position: fixed;
+    left: 38.8%;
+    top: 12%; 
+    z-index: 2;
+}
+#dirtyblond_chest_pony1 {
+    width: 13%;
+    position: fixed;
+    left: 38.4%;
+    top: 11%; 
+    z-index: 2;
+}
+#grayblue_shoulder1 {
+    width: 18%;
+    position: fixed;
+    left: 36%;
+    top: 12%; 
+    z-index: 2;
+}
+#purple_shoulder1 {
+    width: 8%;
+    position: fixed;
+    left: 41%;
+    top: 12.5%; 
+    z-index: 2;
+}
+
+#brown_braid1{
+    width: 10.5%;
+    position: fixed;
+    left: 39.8%;
+    top: 12.9%; 
+    z-index: 2;
+}
+
+#purple_bun_short1{
+    width: 8.5%;
+    position: fixed;
+    left: 40.5%;
+    top: 9.5%; 
+    z-index: 2;
+}
+
+#white_long_wavey1{
+    width: 12%;
+    position: fixed;
+    left: 38%;
+    top: 9.5%; 
+    z-index: 2;
+}
+
+#darkbrown_bun_short1{
+    width: 11%;
+    position: fixed;
+    left:39%;
+    bottom: 60%;
+    z-index: 2;
+}
+
+
+.clothes1 {
+    display: none;  
+}
+
+.clothes {
+    width: 40%;
+}
+
+#clothes_div {
+    display: none;
+    background-color: rgb(201, 144, 255);
+}
+
+#pink_short_dress1 {
+    width: 24%;
+    position: fixed;
+    left: 34.5%;
+    top: 24%; 
+    z-index: 1;
+}
+
+#short_purple_dress1 {
+    width: 19.5%;
+    position: fixed;
+    left: 35.5%;
+    top: 25%; 
+    z-index: 1;
+}
+
+#turquoise_dress1 {
+    width: 19.5%;
+    position: fixed;
+    left: 34.5%;
+    top: 25%; 
+    z-index: 1;
+}
+
+#lime_dress1 {
+    width: 12%;
+    position: fixed;
+    left: 39.3%;
+    top: 27%; 
+    z-index: 1;
+}
+
+#long_blue_dress1 {
+    width: 33%;
+    position: fixed;
+    left: 28.7%;
+    top: 27%; 
+    z-index: 1;
+}
+
+#long_purple_dress1 {
+    width: 35%;
+    position: fixed;
+    left: 26.3%;
+    top: 28.5%; 
+    z-index: 1;
+}
+
+#music_dress1{
+    width: 22%;
+    position: fixed;
+    left: 33.6%;
+    top: 23%; 
+    z-index: 1;
+}
+
+#night_dress1{
+    width: 29%;
+    position: fixed;
+    left: 29.7%;
+    top: 14.5%; 
+    z-index: 1;
+}
+
+#red_dress1{
+    width: 26%;
+    position: fixed;
+    left: 33%;
+    top: 27%; 
+    z-index: 1; 
+}
+
+#short_blue_dress1{
+    width: 14%;
+    position: fixed;
+    left: 38.3%;
+    top: 25%; 
+    z-index: 1; 
+}
+
+#short_blue_dress21{
+    width: 14.2%;
+    position: fixed;
+    left: 37.8%;
+    top: 25.3%; 
+    z-index: 1; 
+}
+
+
+#short_blue_dress31{
+    width: 17.5%;
+    position: fixed;
+    left: 35.5%;
+    top: 25.7%; 
+    z-index: 1; 
+}
+
+#short_blue_dress41{
+    width: 17.5%;
+    position: fixed;
+    left: 36.2%;
+    top: 25.2%; 
+    z-index: 1; 
+}
+
+#short_strepless_purple_dress1 {
+    width: 19%;
+    position: fixed;
+    left: 35.6%;
+    top: 29%; 
+    z-index: 1; 
+}
+
+.face1 {
+    display: none;  
+    width:4%;
+    position: fixed;
+    left: 43.2%;
+    top: 18%; 
+    z-index: 1;
+}
+
+#face_div {
+    display: none ;
+    background-color: rgb(201, 144, 255);
+}
+
+
+.background {
+    width: 50%;
+}
+
+#background_div {
+    display: none;
+    background-color: rgb(201, 144, 255);
+}

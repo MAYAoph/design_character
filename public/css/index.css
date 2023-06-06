@@ -1,0 +1,92 @@
+#sign-up{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 200%;
+    background-color: rgba(0,0,0,.5);
+      color: #fff;
+    padding-bottom: 15%; 
+     border-radius: 15px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: column;
+     margin-left: 25%;
+     margin-right: 25%;
+     margin-top: 7%;
+
+    
+    }
+
+.rainbow-button {
+        width:calc(15vw + 4.5px);
+        height:calc(6vw + 4.5px);
+        background-image: linear-gradient(90deg,rgb(119, 0, 255) 0%,rgb(162, 0, 255) 49%, rgb(188, 72, 255) 80%, rgb(183, 0, 255) 100%);
+        border-radius:5px;
+        text-transform:uppercase;
+        font-size:2.5vw;
+        font-weight:bold;
+        position: fixed;
+        color: aliceblue;
+
+      }
+      .rainbow-button:after {
+        content:attr(alt);
+        width:15vw;
+        height:6vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .rainbow-button:hover {
+        animation:slidebg 2s linear infinite;
+      }
+      
+      @keyframes slidebg {
+        to {
+          background-position:15vw;
+        }
+      }
+
+body {
+  background: url(../img/salon.avif) no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#girl {
+    width:30%;
+    height: auto;
+    position: fixed;
+    left: 15%;
+    top: 20%;
+}
+
+#chestnut_chest1 {
+    width: 12%;
+    position: fixed;
+    left: 23.7%;
+    top: 22%; 
+    z-index: 2;
+}
+
+#short_strepless_purple_dress1 {
+    width: 19%;
+    position: fixed;
+    left: 20.7%;
+    top:40%; 
+    z-index: 1; 
+}
+
+.face1 { 
+    width:4%;
+    position: fixed;
+    left: 28.2%;
+    top: 28.5%; 
+    z-index: 1;
+}
+
+#title {
+    position: fixed;
+    bottom: 70%;
+}
