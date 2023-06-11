@@ -1,20 +1,20 @@
 const outfit= {name: "", hair: "", face:"", clothes: "", background: ""};
 
-function popUp() {
-    let pop= document.getElementById("pop");
-    console.log(pop);
-    pop.classList.add("popUp");
-    const o= document.getElementById("overlay");
-    o.classList.add("overlay2");
-}
+//function popUp() {
+ //   let pop= document.getElementById("pop");
+ //   console.log(pop);
+  //  pop.classList.add("popUp");
+   // const o= document.getElementById("overlay");
+  //  o.classList.add("overlay2");
+//}
 
-function popDown() {
-    pop.classList.remove("popUp");
-    let p= document.getElementById("overlay");
-    p.classList.remove("overlay2");
-}
-setTimeout(function(){
-    popUp(); }, 2)
+//function popDown() {
+  //  pop.classList.remove("popUp");
+  //  let p= document.getElementById("overlay");
+  //  p.classList.remove("overlay2");
+//}
+//setTimeout(function(){
+  //  popUp(); }, 2)
 
 function start(id) {
     console.log(id);
